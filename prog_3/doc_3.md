@@ -5,6 +5,7 @@ A singly linked list is a linear data structure in which each node contains two 
 In a singly linked list, traversal is normally done in the forward direction. Since there are no backward links, reverse traversal cannot be performed directly. To achieve reverse traversal, recursion is used. The recursive function first reaches the last node and then prints the data while returning back through the recursive calls.
 
 **Algorithm**
+
 Step 1:Start the program.
 
 Step 2:Read the number of nodes from the user.
@@ -24,13 +25,14 @@ Step 5:In the reverse traversal function:
 Step 6:Stop the program.
 
 **Functions Used**
-insertEnd()
+
+**insertEnd()**
 Inserts a new node at the end of the linked list.
 
-reverseTraversal()
+**reverseTraversal()**
 Traverses and displays the linked list elements in reverse order using recursion.
 
-main()
+**main()**
 Accepts user input, creates the linked list, and calls the reverse traversal function.
 
 **Time and Space Complexity**
