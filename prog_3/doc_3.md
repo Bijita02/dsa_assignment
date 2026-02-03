@@ -46,7 +46,7 @@ struct Node {
 ```
 
 ## Functions Used
-1. ## insertEnd()
+1. **insertEnd()**
 
 **Purpose:**
 Inserts a new node at the end of the linked list.
@@ -59,7 +59,7 @@ Inserts a new node at the end of the linked list.
 
 - Otherwise, traverse to the last node and link the new node
 
-2. ## reverseTraversal()
+2. **reverseTraversal()**
 
 **Purpose:**
 Displays the elements of the linked list in reverse order using recursion.
