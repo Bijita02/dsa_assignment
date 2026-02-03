@@ -54,20 +54,18 @@ Inserts a new node after a given node.
 
 2. **deleteNode()**
 
-Purpose:
+**Purpose:**
 Deletes a specified node from the doubly linked list.
 
-Logic:
+**Logic:**
 
-Update the previous node’s next pointer
+- Update the previous node’s next pointer
+- Update the next node’s prev pointer
+- Free the memory of the deleted node
 
-Update the next node’s prev pointer
+3. **display()**
 
-Free the memory of the deleted node
-
-3. display()
-
-Purpose:
+**Purpose:**
 Displays the elements of the doubly linked list from beginning to end.
 
 ## Algorithm
@@ -95,3 +93,10 @@ Algorithm: Insert After a Given Node
 4. Update **prev** pointer of next node
 
 5. Free the deleted node
+
+## Output
+```bash
+Doubly Linked List: 10 20 30
+Doubly Linked List: 10 20 25 30
+Doubly Linked List: 10 25 30
+```
