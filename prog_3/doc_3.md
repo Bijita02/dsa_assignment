@@ -26,13 +26,13 @@ Step 6:Stop the program.
 
 **Functions Used**
 
-**insertEnd()**
+**insertEnd():**
 Inserts a new node at the end of the linked list.
 
-**reverseTraversal()**
+**reverseTraversal():**
 Traverses and displays the linked list elements in reverse order using recursion.
 
-**main()**
+**main():**
 Accepts user input, creates the linked list, and calls the reverse traversal function.
 
 **Time and Space Complexity**
