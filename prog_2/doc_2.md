@@ -16,10 +16,10 @@ To implement stack operations for:
 
 • **Compiler: GCC / Turbo C**
 
-• **Header Files Used:** 
-     - stdio.h-for input/output operations
-     - ctype.h-for checking digits
-     - math.h-for power operation
+• Header Files Used:
+- stdio.h-for input/output operations
+- ctype.h-for checking digits
+- math.h-for power operation
 
 ## Theory
 An infix expression places operators between operands (e.g., 3+5). 
