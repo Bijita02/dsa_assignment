@@ -35,6 +35,29 @@ To overcome this limitation, recursion can be used.
 
 - This results in elements being displayed in reverse order
 
+## Algorithm
+Algorithm to Insert Node at End
+
+1. Create a new node
+
+2. Assign data to the new node
+
+3. Set **next** to **NULL**
+
+4. If the list is empty, return new node as head
+
+5. Otherwise, traverse to the last node
+
+6. Link the new node to the last node
+
+## Algorithm for Reverse Traversal Using Recursion
+
+1. If the current node is **NULL**, return
+
+2. Call the function recursively for the next node
+
+3. Print the current node’s data
+
 ## Structure Definition
 ```bash
 struct Node {
@@ -80,29 +103,6 @@ Displays the elements of the linked list in reverse order using recursion.
 ```bash
 void reverseTraversal(struct Node *head);
 ```
-
-## Algorithm
-Algorithm to Insert Node at End
-
-1. Create a new node
-
-2. Assign data to the new node
-
-3. Set **next** to **NULL**
-
-4. If the list is empty, return new node as head
-
-5. Otherwise, traverse to the last node
-
-6. Link the new node to the last node
-
-## Algorithm for Reverse Traversal Using Recursion
-
-1. If the current node is **NULL**, return
-
-2. Call the function recursively for the next node
-
-3. Print the current node’s data
 
 ## Description of main() Function
 

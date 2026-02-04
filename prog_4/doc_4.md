@@ -26,6 +26,32 @@ Unlike a singly linked list, traversal is possible in both forward and backward 
 - Efficient insertion and deletion operations
 - No need to traverse from the beginning while deleting a node
 
+## Algorithm
+Algorithm: Insert After a Given Node
+1. Check if the previous node is NULL
+
+2. Create a new node
+
+3. Assign data to the new node
+
+4. Set new node’s **next** to previous node’s **next**
+
+5. Set new node’s **prev** to previous node
+
+6. Update pointers of adjacent nodes
+
+## Algorithm: Delete a Given Node
+
+1. Check if list or node is NULL
+
+2. If node is head, update head pointer
+
+3. Update **next** pointer of previous node
+
+4. Update **prev** pointer of next node
+
+5. Free the deleted node
+
 ## Node Structure
 ```bash
 prev | data | next
@@ -120,32 +146,6 @@ void display(struct Node *head) {
     printf("\n");
 }
 ```
-
-## Algorithm
-Algorithm: Insert After a Given Node
-1. Check if the previous node is NULL
-
-2. Create a new node
-
-3. Assign data to the new node
-
-4. Set new node’s **next** to previous node’s **next**
-
-5. Set new node’s **prev** to previous node
-
-6. Update pointers of adjacent nodes
-
-## Algorithm: Delete a Given Node
-
-1. Check if list or node is NULL
-
-2. If node is head, update head pointer
-
-3. Update **next** pointer of previous node
-
-4. Update **prev** pointer of next node
-
-5. Free the deleted node
 
 ## Description of main() Function
 

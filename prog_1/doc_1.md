@@ -26,7 +26,7 @@ Algorithm to Check Balanced Parentheses
 - If stack is empty → Balanced
 - Else → Not Balanced
 
-## DATA STRUCTURE USED
+## Data Structure Used
 **Stack Definition**
 The stack is implemented using a character array.
 ```bash
@@ -45,7 +45,7 @@ Stores the index of the topmost element of the stack.
 - top = -1
 Indicates that the stack is empty.
 
-## FUNCTIONS IMPLEMENTED
+## Functions Implemented
 1. **initStack()**
 
 Purpose:
@@ -142,7 +142,7 @@ int isBalanced(char *exp) {
     return (top == -1);
 }
 ```
-## ORGANIZATION OF THE main() FUNCTION
+## Organization of the main() function
 
 The main() function is organized as follows:
 
@@ -168,13 +168,13 @@ int main() {
 }
 ```
 
-## SAMPLE OUTPUT
+## Sample Output
 ```bash
 a + (b - c) * (d -> Not Balanced
 m + [a - b * (c + d * {m)] -> Not Balanced
 a + (b - c) -> Balanced
 ```
-## CONCLUSION
+## Conclusion
 
 The program successfully checks whether a mathematical expression has balanced parentheses using a stack.
 By following the LIFO principle, it accurately detects:
