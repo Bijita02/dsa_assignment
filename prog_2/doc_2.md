@@ -34,7 +34,7 @@ Stacks are used because they follow the LIFO (Last In First Out) principle:
 ## Algorithm
 **Step 1: Read the infix expression**
 
-    - Accept an infix expression containing single-digit operands and operators.
+- Accept an infix expression containing single-digit operands and operators.
 
 **Step 2: Infix to Postfix Conversion**
 
