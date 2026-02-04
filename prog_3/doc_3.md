@@ -1,5 +1,9 @@
 ## Reverse Traversal of Singly Linked List Using Recursion in C
 
+## Introduction
+
+A singly linked list is a dynamic data structure where each node contains data and a pointer to the next node. Since there is no pointer to the previous node, reverse traversal is not directly possible. This program uses recursion to display the elements of a singly linked list in reverse order by printing the data while returning from recursive function calls.
+
 ## Objective
 
 To write a C program that:
@@ -9,14 +13,6 @@ To write a C program that:
 2. Inserts nodes at the end of the list
 
 3. Displays the elements of the list in reverse order using recursion
-
-## Software Requirements
-
-- **Programming Language: C**
-
-- **Compiler: GCC / Turbo C / Any standard C compiler**
-
-- **Operating System: Windows / Linux**
 
 ## Theory
 
@@ -33,11 +29,13 @@ To overcome this limitation, recursion can be used.
 
 - The function recursively calls itself until it reaches the last node
 
+- Once the base condition (NULL) is reached, the function starts returning
+
 - While returning from recursive calls, it prints the data
 
-- This results in elements being printed in reverse order
+- This results in elements being displayed in reverse order
 
-Structure Definition
+## Structure Definition
 ```bash
 struct Node {
     int data;
@@ -52,12 +50,19 @@ struct Node {
 Inserts a new node at the end of the linked list.
 
 **Logic:**
+- Allocate memory for a new node using malloc()
 
-- Allocate memory for a new node
+- Assign data to the new node
 
-- If the list is empty, make the new node the head
+- Set the next pointer to NULL
+
+- If the list is empty, return the new node as the head
 
 - Otherwise, traverse to the last node and link the new node
+
+```bash
+struct Node* insertEnd(struct Node *head, int value);
+```
 
 2. **reverseTraversal()**
 
@@ -66,11 +71,15 @@ Displays the elements of the linked list in reverse order using recursion.
 
 **Logic:**
 
-- If the current node is NULL, return
+- If the current node is **NULL**, return
 
 - Recursively call the function for the next node
 
-- Print the data while returning from recursion
+- Print the current node's data while returning from recursion
+
+```bash
+void reverseTraversal(struct Node *head);
+```
 
 ## Algorithm
 Algorithm to Insert Node at End
@@ -79,7 +88,7 @@ Algorithm to Insert Node at End
 
 2. Assign data to the new node
 
-3. Set **next** to NULL
+3. Set **next** to **NULL**
 
 4. If the list is empty, return new node as head
 
@@ -87,14 +96,23 @@ Algorithm to Insert Node at End
 
 6. Link the new node to the last node
 
-## Algorithm for Reverse Traversal
+## Algorithm for Reverse Traversal Using Recursion
 
-1. If the current node is NULL, return
+1. If the current node is **NULL**, return
 
 2. Call the function recursively for the next node
 
 3. Print the current node’s data
 
+## Description of main() Function
+
+- Initialize the head pointer to NULL
+
+- Read the number of nodes from the user
+
+- Read data values and insert them at the end of the list
+
+- Call **reverseTraversal()** to display the list in reverse order
 
 ## Sample Output
 ```bash
@@ -109,13 +127,15 @@ Reverse Traversal:
 ```
 ## Advantages
 
-No extra memory is required for storing the reversed list
+- No extra memory is required for storing the reversed list
 
-Simple and elegant solution using recursion
+- Simple and elegant solution using recursion
+
+- Maintains original list structure
 
 ## Limitation
 
-Uses recursion, which may cause stack overflow for very large lists
+- Uses recursion, which may cause stack overflow for very large linked lists
 
 ## Result
 
