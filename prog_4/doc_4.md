@@ -66,7 +66,7 @@ struct Node {
 };
 ```
 ## Functions Used
-1. **insertAfter()**
+1. ### insertAfter()
 
 **Purpose:**
 Inserts a new node after a given node.
@@ -97,7 +97,7 @@ void insertAfter(struct Node *prevNode, int newData) {
 }
 ```
 
-2. **deleteNode()**
+2. ### deleteNode()
 
 **Purpose:**
 Deletes a specified node from the doubly linked list.
@@ -130,7 +130,7 @@ void deleteNode(struct Node **head, struct Node *delNode) {
 }
 ```
 
-3. **display()**
+3. ### display()
 
 **Purpose:**
 Displays the elements of the doubly linked list from beginning to end.
