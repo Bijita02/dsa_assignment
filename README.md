@@ -29,11 +29,11 @@ All programs are written in **C language**.
      ```
 2. **Navigate into a program folder**
    ```bash
-   cd dsa_assignment/prog_1
+   cd dsa_assignment/prog_<number>
     ```
 3. **Compile the C program**
    ```bash
-   gcc filename.c -o output
+   gcc prog_<number>.c -o output
    ```
 4. **Run the code**
    ```bash
