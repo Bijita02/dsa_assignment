@@ -1,47 +1,106 @@
-## Introduction
+# Min Heap and Max Heap Implementation
 
-Heap is a non-linear data structure based on a complete binary tree. It is mainly used to efficiently retrieve the minimum or maximum element from a collection of data. Heaps are widely used in priority queues, scheduling problems, and sorting algorithms such as heap sort.
+## 1. Introduction
 
-There are two types of heaps:
+Heap is a special tree-based data structure that satisfies the heap property. It is widely used in priority queues, heap sort, and scheduling algorithms. There are two main types of heaps: Min Heap and Max Heap.
 
-**Min Heap**, where the smallest element is stored at the root.
+In this program, Min Heap and Max Heap are implemented using arrays in the C programming language. The program takes user input, builds both heaps, and displays them.
 
-**Max Heap**, where the largest element is stored at the root.
+## 2. Objective
 
-This program takes an unsorted array and constructs both Min Heap and Max Heap using heapify operations.
+The objectives of this program are:
 
-## Objective
+* To understand the concept of heap data structures.
+* To implement Min Heap and Max Heap using arrays.
+* To learn heapify operations in C.
+* To display Min Heap and Max Heap from the same input data.
 
-The objective of this program is:
+## 3. Theory
 
-- To understand heap data structures.
+### 3.1 Heap
 
-- To construct Min Heap and Max Heap from an unsorted array.
+A heap is a complete binary tree where each parent node follows a specific order with its child nodes.
 
-- To implement heapify logic using C programming.
+* In a **Min Heap**, the value of the parent node is smaller than or equal to its children.
+* In a **Max Heap**, the value of the parent node is greater than or equal to its children.
 
-- To study how heap properties are maintained.
+Heaps are commonly represented using arrays.
 
-## Theory
 
-A heap is a complete binary tree that satisfies the heap property.
+### 3.2 Min Heap
 
-**Min Heap**
+In a Min Heap, the smallest element is always present at the root of the tree. It is useful when we want quick access to the minimum value.
 
-In a Min Heap, the parent node is always smaller than or equal to its child nodes. Therefore, the minimum element is always at the root.
 
-**Max Heap**
+### 3.3 Max Heap
 
-In a Max Heap, the parent node is always greater than or equal to its child nodes. Therefore, the maximum element is always at the root.
+In a Max Heap, the largest element is always present at the root of the tree. It is useful when we want quick access to the maximum value.
 
-**Array Representation**
+## 4. Functions Description
 
-Heaps are commonly implemented using arrays.
+### swap()
 
-For an element at index i:
+Swaps two integer values using pointers.
 
-- Parent index = (i - 1) / 2
+### minHeapify()
 
-- Left child index = 2i + 1
+Ensures that the subtree rooted at a given index follows the Min Heap property.
 
-- Right child index = 2i + 2
+### maxHeapify()
+
+Ensures that the subtree rooted at a given index follows the Max Heap property.
+
+### buildMinHeap()
+
+Converts an array into a Min Heap by calling the minHeapify function.
+
+### buildMaxHeap()
+
+Converts an array into a Max Heap by calling the maxHeapify function.
+
+### printArray()
+
+Displays the elements of the array.
+
+### main()
+
+Accepts user input, creates Min Heap and Max Heap from the input array, and prints the results.
+
+## 5. Algorithm
+
+### Steps:
+
+1. Start the program.
+2. Enter the number of elements.
+3. Enter the array elements.
+4. Copy the array into two separate arrays.
+5. Build Min Heap using buildMinHeap().
+6. Build Max Heap using buildMaxHeap().
+7. Display Min Heap.
+8. Display Max Heap.
+9. Stop the program.
+
+## 6. Implementation Details
+
+* Arrays are used to represent heaps.
+* The heapify process starts from the last non-leaf node.
+* Recursion is used in heapify functions.
+* Indexing starts from 0.
+
+## 7. Sample Output
+```bash
+**Input:**
+
+* Number of elements: 6
+* Elements: 20 15 8 10 5 7
+
+**Min Heap:**
+5 10 7 20 15 8
+
+**Max Heap:**
+20 15 8 10 5 7
+```
+
+## 8. Conclusion
+
+This program successfully demonstrates the construction of Min Heap and Max Heap using arrays in C. Heaps are efficient data structures for managing priority-based operations. Understanding heapify operations helps in learning advanced algorithms like Heap Sort.
