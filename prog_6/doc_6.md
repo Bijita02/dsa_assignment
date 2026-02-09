@@ -89,15 +89,15 @@ Accepts user input, creates Min Heap and Max Heap from the input array, and prin
 
 ## 7. Sample Output
 ```bash
-**Input:**
+Input:
 
 * Number of elements: 6
 * Elements: 20 15 8 10 5 7
 
-**Min Heap:**
+Min Heap:
 5 10 7 20 15 8
 
-**Max Heap:**
+Max Heap:
 20 15 8 10 5 7
 ```
 

@@ -1,4 +1,4 @@
-## Implementation of Doubly Linked List Using Structure in C
+# Implementation of Doubly Linked List Using Structure in C
 
 ## Introduction
 

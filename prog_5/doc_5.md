@@ -1,4 +1,4 @@
-## Implementation of Undirected Graph Using Adjacency Matrix with BFS and DFS in C
+# Implementation of Undirected Graph Using Adjacency Matrix with BFS and DFS in C
 
 ## Introduction
 

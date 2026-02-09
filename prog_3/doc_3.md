@@ -1,4 +1,4 @@
-## Reverse Traversal of Singly Linked List Using Recursion in C
+# Reverse Traversal of Singly Linked List Using Recursion in C
 
 ## Introduction
 

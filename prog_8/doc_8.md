@@ -108,7 +108,7 @@ Accepts user input, generates random numbers, allows the user to select a sortin
 
 ## 7. Sample Output
 ```bash
-### Input:
+Input:
 Enter number of elements: 4
 
 Original Array:
@@ -121,7 +121,7 @@ Choose Sorting Algorithm:
 4. Merge Sort
 Enter choice: 1
 
-### Output
+Output:
 **Sorted Array:**
 506 521 843 891
 

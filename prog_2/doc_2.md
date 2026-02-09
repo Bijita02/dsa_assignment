@@ -1,4 +1,4 @@
-## Infix to Postfix Expression Conversion and Evaluation Using Stack
+# Infix to Postfix Expression Conversion and Evaluation Using Stack
 
 ## Introduction
 This document describes a C program that converts an infix expression into a postfix expression and then evaluates the postfix expression using stack data structures. The program demonstrates the use of stacks for handling operators and operands based on operator precedence rules.

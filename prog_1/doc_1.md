@@ -1,4 +1,4 @@
-## Checking Balanced Parentheses Using Stack in C
+# Checking Balanced Parentheses Using Stack in C
 
 ## Introduction
 This document describes a C program that checks whether a given mathematical expression contains a balanced number of parentheses. The program uses the **stack data structure** implemented using an array and follows the **LIFO(Last In First Out)** principle.
