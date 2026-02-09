@@ -122,7 +122,7 @@ Choose Sorting Algorithm:
 Enter choice: 1
 
 Output:
-**Sorted Array:**
+Sorted Array:
 506 521 843 891
 
 Total Comparisons: 6
